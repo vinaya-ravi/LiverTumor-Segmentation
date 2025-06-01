@@ -1,16 +1,16 @@
 # Residual U-Net-Based Liver Tumor Segmentation in CT Imaging
 
-This repository presents a comparative study and implementation of two deep learning architectures—**U-Net** and **Residual U-Net (ResU-Net)**—for liver tumor segmentation in CT images.
+This repository presents a comparative study and implementation of two deep learning architectures **U-Net** and **Residual U-Net (ResU-Net)** for liver tumor segmentation in CT images.
 
 ---
 
 ## Overview
 
 - **Purpose:**  
-  To evaluate and compare the effectiveness of U-Net and ResU-Net models in segmenting liver tumors from CT scans, aiming to improve accuracy and reliability for medical diagnostics and treatment planning.
+  To evaluate and compare the effectiveness of U-Net and ResU-Net models in segmenting liver tumors from CT scans aiming to improve accuracy and reliability for medical diagnostics and treatment planning.
 
 - **Key Features:**  
-  - Utilizes a curated subset of the LiTS (Liver Tumor Segmentation) dataset.
+  - Utilizes a curated subset of the LiTS dataset.
   - Implements robust preprocessing and augmentation techniques.
   - Provides both quantitative and qualitative evaluation of segmentation results.
   - Includes visualization tools for side-by-side result comparison.
@@ -22,14 +22,14 @@ This repository presents a comparative study and implementation of two deep lear
 - **Dataset:**  
   - Based on the LiTS dataset from Kaggle, filtered to include only CT slices with annotated tumor regions.
   - Images and masks are resized to 128×128 pixels and normalized.
-  - Data augmentation (flips, rotations, intensity shifts) enhances model robustness.
+  - Data augmentation enhances model robustness.
 
 - **Models:**  
   - **U-Net:** Encoder-decoder architecture with skip connections, effective for biomedical image segmentation.
   - **ResU-Net:** An improved U-Net variant with residual blocks, enabling deeper networks and better feature learning for complex tumor structures.
 
 - **Training Protocol:**  
-  - Both models trained on identical data splits with the Adam optimizer and binary cross-entropy loss.
+  - Both models trained on identical data splits with the Adam optimizer and binary cross entropy loss.
   - Early stopping and TensorBoard monitoring are used to prevent overfitting and log progress.
 
 - **Evaluation Metrics:**  
@@ -62,4 +62,4 @@ This repository presents a comparative study and implementation of two deep lear
 ## Future Enhancements
 
 - Extension to 3D volumetric and multi-modal segmentation.
-- Exploration of attention mechanisms and lightweight models for real-time clinical deployment.
+- Exploration of attention mechanisms and lightweight models for clinical deployment.
