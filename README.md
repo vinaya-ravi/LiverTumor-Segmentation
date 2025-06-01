@@ -1,4 +1,4 @@
-# Residual U-Net for Enhanced Liver Tumor Segmentation in CT Images
+# Residual U-Net-Based Liver Tumor Segmentation in CT Imaging
 
 This repository presents a comparative study and implementation of two deep learning architectures—**U-Net** and **Residual U-Net (ResU-Net)**—for liver tumor segmentation in CT images.
 
